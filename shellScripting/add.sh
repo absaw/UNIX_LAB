@@ -7,7 +7,7 @@ if [ -z "$1" ] || [ -z "$2" ]
 then
 	echo "Wrong input"
 else
-	echo -n	"The sum is :- "
+	echo -n	"The sum is = "
 	echo "$1 + $2" | bc -l
 fi
 
