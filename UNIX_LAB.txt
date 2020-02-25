@@ -1,0 +1,55 @@
+List of Ubuntu Commands
+1. mkdir
+2. mv 
+to move files 
+3. touch - text editor 
+4. vi 
+5. grep
+6. history // history of commands on terminal with count on lhs
+7. ls
+8. cd
+9. du -h //disk usage of pwd in human readable format
+10. pwd //print working directory
+11. rmdir <dir_name> // remove empty directory
+12. cat //print contents of text file
+13. cp <source> <dest>
+
+USING BASIC COMMANDS
+user@abdgr8:~/Desktop/UNIX_LAB$ vi 1.txt
+user@abdgr8:~/Desktop/UNIX_LAB$ vi 2.txt
+user@abdgr8:~/Desktop/UNIX_LAB$ cat 1.txt
+This is the 1st text file!
+user@abdgr8:~/Desktop/UNIX_LAB$ cat 1.txt 2.txt
+This is the 1st text file!
+This is the 2nd file text !
+
+user@abdgr8:~/Desktop/UNIX_LAB$ cat 1.txt 
+This is the 1st text file!
+user@abdgr8:~/Desktop/UNIX_LAB$ vi 3.txt
+user@abdgr8:~/Desktop/UNIX_LAB$ cat 1.txt 2.txt 3.txt
+This is the 1st text file!
+This is the 2nd file text !
+
+This is the 3rd text file !
+
+user@abdgr8:~/Desktop/UNIX_LAB$ cat 1.txt 
+This is the 1st text file!
+user@abdgr8:~/Desktop/UNIX_LAB$ ls
+1.txt  2.txt  3.txt
+user@abdgr8:~/Desktop/UNIX_LAB$ grep is 1.txt 
+This is the 1st text file!
+user@abdgr8:~/Desktop/UNIX_LAB$ grep file 1.txt 
+This is the 1st text file!
+user@abdgr8:~/Desktop/UNIX_LAB$ grep file 1.txt 2.txt 3.txt 
+1.txt:This is the 1st text file!
+2.txt:This is the 2nd file text !
+3.txt:This is the 3rd text file !
+user@abdgr8:~/Desktop/UNIX_LAB$ grep this is the 1.txt 2.txt 3.txt 
+grep: is: No such file or directory
+grep: the: No such file or directory
+user@abdgr8:~/Desktop/UNIX_LAB$ grep "this is the" 1.txt 2.txt 3.txt 
+user@abdgr8:~/Desktop/UNIX_LAB$ grep "This is the" 1.txt 2.txt 3.txt 
+1.txt:This is the 1st text file!
+2.txt:This is the 2nd file text !
+3.txt:This is the 3rd text file !
+
